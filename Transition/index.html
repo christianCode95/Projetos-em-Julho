@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Projeto Trasições CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <h2>Configurar Transições CSS</h2>
+    <label for="property">Propriedade CSS:</label>
+    <select id="property">
+        <option value="all">all</option>
+        <option value="background-color">background-color</option>
+        <option value="width">width</option>
+        <option value=",height">height</option>
+        <option value="transform">transform</option>
+        <option value="opacity">opacity</option>
+    </select>
+    <label for="duration">Duração (s):</label>
+    <input type="number" id="duration" value="0.5" min="0" max="5" step="0.1"/>
+    <label for="easing">Easing:</label>
+    <select id="easing">
+        <option value="ease">ease</option>
+        <option value="linear">linear</option>
+        <option value="ease-in">ease-in</option>
+        <option value="ease-out">ease-out</option>
+        <option value="ease-in-out">ease-in-out</option>
+    </select>
+    <button id="toggle">Alterar</button>
+    <div id="box"></div>
+    <script src='script.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body{
+    font-family: Arial,sans-serif;
+    padding: 20px;
+}
+label{
+    margin-right: 10px;
+}
+#box{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
