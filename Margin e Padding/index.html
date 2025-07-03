@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Projeto Espaçamento CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+
+<body>
+    <h2>Configurar Espaçamento (margin & padding)</h2>
+    <label><input type="checkbox" id="syncAll" checked />Sincronizar todos os lados</label>
+    <div>
+        <label for="marginTop">Margin Top:</label>
+        <input type="range" id="marginTop" min="0" max="50" value="10"/>
+        <span id="marginTopVal">10</span> px
+    </div>
+    <div>
+        <label for="marginRight">Margin Right:</label>
+        <input type="range" id="marginRight" min="0" max="50" value="10"/>
+        <span id="marginRightVal">10</span> px
+    </div>
+    <div>
+        <label for="marginBottom">Margin Bottom:</label>
+        <input type="range" id="marginBottom" min="0" max="50" value="10"/>
+        <span id="marginBottomVal">10</span> px
+    </div>
+    <div>
+        <label for="marginLeft">Margin Left:</label>
+        <input type="range" id="marginLeft" min="0" max="50" value="10"/>
+        <span id="marginLeftVal">10</span> px
+    </div>
+    <hr/>
+    <div>
+        <label for="paddingTop">Padding Top:</label>
+        <input type="range" id="paddingTop" min="0" max="50" value="10"/>
+        <span id="paddingTopVal">10</span> px
+    </div>
+    <div>
+        <label for="paddingRight">Padding Right:</label>
+        <input type="range" id="paddingRight" min="0" max="50" value="10"/>
+        <span id="paddingRightVal">10</span> px
+    </div>
+    <div>
+        <label for="paddingBottom">Padding Bottom:</label>
+        <input type="range" id="paddingBottom" min="0" max="50" value="10"/>
+        <span id="paddingBottomVal">10</span> px
+    </div>
+    <div>
+        <label for="paddingLeft">Padding Left:</label>
+        <input type="range" id="paddingLeft" min="0" max="50" value="10"/>
+        <span id="paddingLeftVal">10</span> px
+    </div>
+    <div id="box">Caixa com margin e padding ajustáveis</div>
+    <script src='script.js'></script>
+</body>
+
+</html>
