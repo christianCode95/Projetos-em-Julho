@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Projeto Fonte CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <h2>Configurar Fonte</h2>
+
+    <label for="fontFamily">Família da fonte:</label>
+    <select id="fontFamily">
+        <option value="Arial, sans-serif">Arial</option>
+        <option value="'Courier New', Courier, monospace">Courier New</option>
+        <option value="'Times New Roman', Times, serif">Times New Roman</option>
+        <option value="Georgia, serif">Georgia</option>
+        <option value="Verdana, Geneva, sans-serif">Verneda</option>
+    </select>
+    <label for="fontSize">Tamanho (px):</label>
+    <input type="number" id="fontSize" min="8" max="72" value="16">
+    <label><input type="checkbox" id="fontWeight"/>Negrito</label>
+    <label><input type="checkbox" id="fontStyle"/>Itálico</label>
+
+    <div id="texto">Este é um texto de exemplo para ver a configuração da fonte.</div>
+    <script src='script.js'></script>
+</body>
+</html>

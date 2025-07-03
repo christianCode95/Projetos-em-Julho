@@ -1,0 +1,17 @@
+body{
+    font-family: Arial,sans-serif;
+    padding: 20px;
+}
+#texto{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 300px;
+}
+label{
+    display: block;
+    margin: 10px 0 5px;
+}
+select,input[type="number"], input[type="checkbox"]{
+    margin-right: 10px;
+}
