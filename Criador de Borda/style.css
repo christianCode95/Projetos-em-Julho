@@ -1,0 +1,30 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 30px;
+}
+h1{
+    margin-bottom: 20px;
+}
+.controls{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.controls label{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+#previewBox{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    line-height: 200px;
+    font-size: 20px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
