@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Projeto Animações CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <h2>Configurar Animações CSS</h2>
+    <label for="animationName">Animação:</label>
+    <select id="animationName">
+        <option value="bounce">bounce</option>
+        <option value="spin">spin</option>
+        <option value="fade">fade</option>
+    </select>
+    <label for="animationDuration">Duração (s):</label>
+    <input type="number" id="animationDuration" min="0.1" max="10" step="0.1" value="2"/>
+    <label for="animationTimingFunction">Timing Function:</label>
+    <select id="animationTimingFunction">
+        <option value="ease">ease</option>
+        <option value="linear">linear</option>
+        <option value="ease-in">ease-in</option>
+        <option value="ease-out">ease-out</option>
+        <option value="ease-in-out">ease-in-out</option>
+    </select>
+    <div id="box">Animar!</div>
+    <script src='script.js'></script>
+</body>
+</html>

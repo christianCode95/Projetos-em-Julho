@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+label{
+    margin-right: 10px;
+}
+#box{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    user-select: none;
+}
+@keyframes bounce{
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-50px);}
+}
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@keyframes fade{
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0.3;}
+}
