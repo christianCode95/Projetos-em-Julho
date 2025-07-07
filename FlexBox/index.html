@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Projeto FlexBox CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <h2>Configurar Flexbox</h2>
+    <label for="flexDirection">flex-direction:</label>
+    <select id="flexDirection">
+        <option value="row">row</option>
+        <option value="row-reverse">row-reverse</option>
+        <option value="column">column</option>
+        <option value="column-reverse">column-reverse</option>
+    </select>
+    <label for="justifyContent">justify-content:</label>
+    <select id="justifyContent">
+        <option value="flex-start">flex-start</option>
+        <option value="center">center</option>
+        <option value="flex-end">flex-end</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>
+        <option value="space-evenly">space-evenly</option>
+    </select>
+    <label for="alignItems">align-items:</label>
+    <select id="alignItems">
+        <option value="stretch">stretch</option>
+        <option value="flex-start">flex-start</option>
+        <option value="center">center</option>
+        <option value="flex-end">flex-end</option>
+        <option value="baseline">baseline</option>
+    </select>
+    <div id="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
