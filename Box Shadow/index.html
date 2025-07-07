@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Gerador de Box Shadow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <h1>Gerador de Box Shadow</h1>
+    <div class="controls">
+        <label>Cor:
+            <input type="color" id="shadowColor" value="#000000">
+        </label>
+        <label>Offset X:
+            <input type="range" id="offsetX" min="-100" max="100" value="0">
+        </label>
+        <label>Offset Y:
+            <input type="range" id="offsetY" min="-100" max="100" value="0">
+        </label>
+        <label>Desfoque (blur):
+            <input type="range" id="blur" min="0" max="100" value="15">
+        </label>
+        <label>Spread:
+            <input type="range" id="spread" min="0" max="50" value="5">
+        </label>
+    </div>
+    <div id="previewBox">Preview</div>
+    <pre id="cssOutput"></pre>
+    <script src='script.js'></script>
+</body>
+
+</html>

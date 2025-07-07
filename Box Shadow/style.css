@@ -1,0 +1,40 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background: #f0f0f0;
+    padding: 30px;
+}
+h1{
+    margin-bottom: 20px;
+}
+.controls{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+#previewBox{
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    background: white;
+    line-height: 200px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    transition: box-shadow 0.3s;
+}
+#cssOutput{
+    margin-top: 20px;
+    font-family: monospace;
+    background: #fff;
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
