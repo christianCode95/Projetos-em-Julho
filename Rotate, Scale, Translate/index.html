@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Projeto Transformações CSS</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <h2>Transformações CSS</h2>
+
+    <label for="rotate">Rotação (deg):</label>
+    <input type="range" id="rotate" min="0" max="360" value="0" />
+    <span id="rotateVal">0</span>
+
+    <br />
+    <label for="scale">Escala:</label>
+    <input type="range" id="scale" min="50" max="150" value="100" />
+    <span id="scaleVal">1.00</span>
+    <br />
+    <label for="translateX">Transladar X (px):</label>
+    <input type="range" id="translateX" min="-100" max="100" value="0" />
+    <span id="translateXVal">0</span> px
+    <br />
+    <label for="translateY">Transladar Y (px):</label>
+    <input type="range" id="translateY" min="-100" max="100" value="0" />
+    <span id="translateYVal">0</span> px
+
+    <div id="box">Transforme-me!</div>
+    <script src='script.js'></script>
+</body>
+
+</html>

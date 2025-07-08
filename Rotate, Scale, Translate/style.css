@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+label{
+    margin-right: 10px;
+}
+#box{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: #58a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    user-select: none;
+}
+input[type="range"]{
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
