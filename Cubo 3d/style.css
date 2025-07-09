@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    background: #121212;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    text-align: center;
+}
+h1{
+    margin-bottom: 200px;
+}
+.cena{
+    width: 200px;
+    height: 200px;
+    perspective: 800px;
+}
+.cubo{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: girar 10s infinite linear;
+}
+.face{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5rem;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid #fff;
+    box-shadow: 0 0 15px rgba(0,255,255,0.3);
+    color: white;
+    backface-visibility: hidden;
+}
+.frente {transform: translateZ(100px);}
+.tras {transform: rotateY(180deg) translateZ(100px);}
+.direita {transform: rotateY(90deg) translateZ(100px);}
+.esquerda {transform: rotateY(-90deg) translateZ(100px);}
+.cima {transform: rotateX(90deg) translateZ(100px);}
+.baixo {transform: rotateX(-90deg) translateZ(100px);}
+
+@keyframes girar{
+    from{
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
