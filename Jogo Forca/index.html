@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jogo da Forca</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="container">
+        <div id="forca">
+            <div class="poste"></div>
+            <div class="haste"></div>
+            <div class="corda"></div>
+            <div class="cabeca parte"></div>
+            <div class="tronco parte"></div>
+            <div class="braco-esq parte"></div>
+            <div class="braco-dir parte"></div>
+            <div class="perna-esq parte"></div>
+            <div class="perna-dir parte"></div>
+        </div>
+        <p id="palavra"></p>
+        <p>Letras digitadas: <span id="letras"></span></p>
+        <p>Tentantivas restantes: <span id="tentativas"></span></p>
+        <input type="text" id="entrada" maxlength="1" autofocus/>
+        <p id="mensagem"></p>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>
