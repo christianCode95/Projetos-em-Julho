@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.atm{
+    background: #333;
+    border-radius: 20px;
+    width: 480px;
+    height: 600px;
+    padding: 30px 20px;
+    box-shadow: inset 0 0 10px #000, 0 0 25px #000;
+    position: relative;
+}
+.tela{
+    background: #000;
+    color: #0f0;
+    border: 6px solid #1aff1a;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    height: 220px;
+    box-shadow: 0 0 20px #1aff1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tela h2{
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff00;
+}
+.tela input{
+    margin-top: 10px;
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 18px;
+    width: 80%;
+    background: #1e1e1e;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.mensagem{
+    margin-top: 15px;
+    font-size: 16px;
+    color: #00ff00;
+}
+.botoes-esquerda{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    top: 80px;
+    margin-left: 200px;
+    margin-top: 300px;
+}
+.botoes-direita{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    top: 80px;
+    margin-right: 200px;
+    margin-top: 300px;
+}
+.botoes-esquerda{
+    left: -110px;
+}
+.botoes-direita{
+    right: -110px;
+}
+button{
+    width: 100px;
+    padding: 10px;
+    background: #555;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000;
+}
+button:hover{
+    background: #777;
+}
+.caixa-base{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #222;
+    border-top: 4px solid #111;
+    border-radius: 0 0 20px 20px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    font-size: 14px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Simulador de Caixa Eletrônico</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="atm">
+        <div class="tela">
+            <h2>Bem-Vindo</h2>
+            <input type="number" id="valor" placeholder="R$ 0,00"/>
+            <div id="mensagem" class="mensagem">Saldo: R$ 0,00</div>
+        </div>
+        <div class="botoes-esquerda">
+            <button onclick="depositar()">Depositar</button>
+            <button onclick="sacar()">Sacar</button>
+        </div>
+        <div class="botoes-direita">
+            <button onclick="mostrarSaldo()">Ver Saldo</button>
+            <button onclick="limpar()">Limpar</button>
+        </div>
+        <div class="caixa-base">
+            Simulação de ATM - Nenhum valor real envolvido
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
