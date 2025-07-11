@@ -1,0 +1,63 @@
+:root{
+    --bg: #fdfdfd;
+    --text: #222;
+    --card: #fff;
+}
+body.dark{
+    --bg: #121212;
+    --text: #eee;
+    --card: #1e1e1e;
+}
+body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+header{
+    background: var(--card);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+button{
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    background: #ff5722;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+main#mapa{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    cursor: crosshair;
+}
+.ponto{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(255,0,0,0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: expand 0.2s ease-out;
+    transition: all 0.2s ease;
+}
+@keyframes expand{
+    from{
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
