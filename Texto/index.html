@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Editor de Texto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="editor-container">
+        <div class="toolbar">
+            <button onclick="formatar('bold')"><b>B</b></button>
+            <button onclick="formatar('italic')"><i>I</i></button>
+            <button onclick="formatar('underline')"><u>U</u></button>
+            <button onclick="salvarTexto()">Salvar</button>
+            <button onclick="carregarTexto()">Carregar</button>
+            <button onclick="limparTexto()">Limpar</button>
+        </div>
+        <div id="editor" contenteditable="true" class="editor-area">
+            Escreva aqui...
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>

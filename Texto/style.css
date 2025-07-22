@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.editor-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  max-width: 90%;
+  overflow: hidden;
+}
+.toolbar {
+  background: #333;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.toolbar button {
+  background: #555;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.toolbar button:hover {
+  background: #777;
+}
+.editor-area {
+  padding: 20px;
+  min-height: 300px;
+  outline: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
