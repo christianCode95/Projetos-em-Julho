@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Painel de Luzes</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <h1>Painel de Luzes 💡</h1>
+    <div class="painel">
+        <div class="item">
+            <div class="luz1" id="luz1"></div>
+            <div class="interruptor1" onclick="alternarLuz('luz1', this)"></div>
+        </div>
+        <div class="item">
+            <div class="luz2" id="luz2"></div>
+            <div class="interruptor2" onclick="alternarLuz('luz2', this)"></div>
+        </div>
+        <div class="item">
+            <div class="luz3" id="luz3"></div>
+            <div class="interruptor3" onclick="alternarLuz('luz3', this)"></div>
+        </div>
+        <div class="item">
+            <div class="luz4" id="luz4"></div>
+            <div class="interruptor4" onclick="alternarLuz('luz4', this)"></div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
