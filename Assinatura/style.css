@@ -1,0 +1,30 @@
+body{
+    font-family: Arial,sans-serif;
+    background: #f3f3f3;
+    text-align: center;
+    padding: 30px;
+}
+h1{
+    margin-bottom: 20px;
+}
+canvas{
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: crosshair;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.botoes{
+    margin-top: 15px;
+}
+button{
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #555;
+}
