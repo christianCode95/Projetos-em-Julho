@@ -1,0 +1,41 @@
+body{
+    font-family: Arial,sans-serif;
+    background: #f0f0f0;
+    text-align: center;
+    padding: 40px;
+}
+h1{
+    margin-bottom: 10px;
+}
+#cor-alvo{
+    font-size: 24px;
+    color: #333;
+}
+.bolinhas{
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.bolinha{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid #333;
+}
+.bolinha:hover{
+    transform: scale(1.1)
+}
+#mensagem{
+    font-size: 20px;
+    margin-top: 20px;
+    min-height: 24px;
+}
+#pontos{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
