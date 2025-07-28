@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contador de Dias de Vidas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <h1>Contador de Dias de Vida</h1>
+    <label for="dataNascimento">Data de Nascimento:</label><br>
+    <input type="date" id="dataNascimento">
+    <button onclick="calcularDias()">Calcular</button>
+    <div id="resultado">
+        <div>
+            <span id="anos">-</span>
+            <p>Anos</p>
+        </div>
+        <div>
+            <span id="meses">-</span>
+            <p>Meses</p>
+        </div>
+        <div>
+            <span id="dias">-</span>
+            <p>Dias</p>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
