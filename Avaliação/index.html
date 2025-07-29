@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Painel de Satisfação</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div id="ratingPainel">
+            <h1>Como você nos avalia?</h1>
+            <div class="emojis" id="emojis">
+                <span class="emoji" data-rating="1">😞</span>
+                <span class="emoji" data-rating="2">😐</span>
+                <span class="emoji" data-rating="3">☺️</span>
+                <span class="emoji" data-rating="4">😀</span>
+                <span class="emoji" data-rating="5">🤩</span>
+            </div>
+            <p id="mensagem" class="mensagem"></p>
+            <button id="sendBtn">Enviar</button>
+        </div>
+        <div id="thankYouPainel" class="hidden">
+            <h2>Obrigado!</h2>
+            <p>Agradecemos o seu feedback</p>
+            <button id="resetBtn">Enviar outra resposta</button>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>
