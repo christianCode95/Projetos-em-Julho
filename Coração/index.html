@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Coração Batendo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+
+<body>
+    <div class="container">
+        <div id="heart" class="heart"></div>
+        <div class="controls">
+            <button id="toggleBtn">Ativar Batimento</button>
+            <div class="control-group">
+                <label for="velocidade">Velocidade:</label>
+                <input type="range" id="velocidade" min="0.5" max="3" step="0.1" value="1">
+                <span id="velocidadeValue">1.0s</span>
+            </div>
+            <div class="control-group">
+                <label for="intensidade">Intesidade:</label>
+                <input type="range" id="intensidade" min="1.1" max="2.5" step="0.1" value="1.5">
+                <span id="intensidadeValue">1.5x</span>
+            </div>
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+
+</html>

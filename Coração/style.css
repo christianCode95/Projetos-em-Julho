@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #ffeef0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  text-align: center;
+  max-width: 400px;
+}
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin: 0 auto 150px;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.heart::before,
+.heart::after {
+  content: "";
+  width: 52px;
+  height: 80px;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  background: red;
+  border-radius: 25px 25px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.bater {
+  animation: batendo 2s infinite;
+}
+@keyframes batendo {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(var(--intensidade, 1.5));
+  }
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+.control-group label {
+  font-weight: bold;
+  color: #d63384;
+  min-width: 80px;
+  text-align: left;
+}
+.control-group input[type="range"] {
+  flex: 1;
+  height: 8px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  -webkit-appearance: none;
+}
+.control-group input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #d63384;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.control-group input[type="range"]::-moz-range-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #d63384;
+  cursor: pointer;
+  border: none;
+}
+.control-group input[type="range"]::-webkit-slider-thumb:hover {
+  background: #b02a5b;
+}
+.control-group span {
+  font-weight: bold;
+  color: #d63384;
+  min-width: 50px;
+  text-align: right;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: darkred;
+}
